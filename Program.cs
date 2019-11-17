@@ -80,6 +80,14 @@ namespace Temperatures
         }
         private static void FindHighestTemperature()
         {
+            double highestTemperature = 0;
+            foreach (double temperature in temperaturesArray)
+            {
+                if (temperature > highestTemperature)
+                {
+                    highestTemperature = temperature;
+                }
+            }
             WriteLine("Highest Temperature is {0}", highestTemperature);
         }
 
