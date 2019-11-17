@@ -24,6 +24,10 @@ namespace Temperatures
             {
                 ReadTemperatures(i);
             }
+            AverageForEach();
+            AverageFor();
+            FindHighestTemperature();
+            FindTempsBelowGiven();
         }
 
         private static string GenerateHeader()
@@ -50,5 +54,23 @@ namespace Temperatures
             }
             temperaturesArray[index] = number;
         }
+        private static void AverageForEach()
+        {
+            WriteLine("Display Temperature For Each Loop");
+        }
+        private static void AverageFor()
+        {
+            WriteLine("Display Temperature For Loop");
+        }
+        private static void FindHighestTemperature()
+        {
+            WriteLine("Highest Temperature is {0}", highestTemperature);
+        }
+
+        private static void FindTempsBelowGiven()
+        {
+            WriteLine("Display Temperature For Each Loop");
+        }
+
     }
 }
