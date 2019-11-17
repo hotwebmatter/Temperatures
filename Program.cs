@@ -56,7 +56,15 @@ namespace Temperatures
         }
         private static void AverageForEach()
         {
+            double total = 0;
             WriteLine("Display Temperature For Each Loop");
+            foreach (double temperature in temperaturesArray)
+            {
+                WriteLine("\t{0}", temperature);
+                total += temperature;
+            }
+            WriteLine("Average temperature is {0}", total / temperaturesArray.Length);
+            WriteLine("************************************\n");
         }
         private static void AverageFor()
         {
