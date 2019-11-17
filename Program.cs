@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**
+ * ######################################################
+ * ##    Programming Assignment #11                    ##
+ * ##    Developer: Matthew Obert                      ##
+ * ##    Date Submitted: November 17 2019              ##
+ * ##    Purpose: Demonstrate usage of arrays          ##
+ * ######################################################
+ */
+using System;
+using static System.Console;
 
 namespace Temperatures
 {
@@ -6,7 +15,7 @@ namespace Temperatures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Hello World!");
         }
     }
 }
