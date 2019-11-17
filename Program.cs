@@ -42,7 +42,7 @@ namespace Temperatures
 
         private static void ReadTemperatures(int index)
         {
-            string userInput = string.Empty;
+            string userInput;
             double number;
             Write("Enter temperature {0}: ", index + 1);
             userInput = ReadLine();
