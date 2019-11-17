@@ -20,6 +20,10 @@ namespace Temperatures
         static void Main(string[] args)
         {
             Write(GenerateHeader());
+            for (int i = 0; i < 7; i++)
+            {
+                ReadTemperatures(i);
+            }
         }
 
         private static string GenerateHeader()
@@ -30,6 +34,21 @@ namespace Temperatures
             result += string.Format("Enter 7 Temperatures\n");
             result += string.Format("************************************\n");
             return result;
+        }
+
+        private static void ReadTemperatures(int index)
+        {
+            string userInput = string.Empty;
+            double number;
+            Write("Enter temperature {0}: ", index + 1);
+            userInput = ReadLine();
+            while (double.TryParse(userInput, out number) == false)
+            {
+                // Invalid Input
+                Write("Incorrect value\nEnter temperature {0}: ", index + 1);
+                userInput = ReadLine();
+            }
+            temperaturesArray[index] = number;
         }
     }
 }
