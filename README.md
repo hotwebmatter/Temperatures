@@ -48,6 +48,10 @@ Average temperature is 74.9
 ************************************
 
 Highest Temperature is 81
+************************************
+
 Find temperatures lower than: 70
 There are 2 days lower than 70
+************************************
+
 ```
