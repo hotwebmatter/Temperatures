@@ -95,7 +95,17 @@ namespace Temperatures
 
         private static void FindTempsBelowGiven()
         {
-            WriteLine("Display Temperature For Each Loop");
+            string label = "Find temperatures lower than: ";
+            double temperatureThreshold = ReadTemperature(label);
+            int counter = 0;
+            foreach (double temp in temperaturesArray)
+            {
+                if (temp < temperatureThreshold)
+                {
+                    counter++;
+                }
+            }
+            WriteLine("There are {0} days lower than {1}", counter, temperatureThreshold);
         }
 
     }
