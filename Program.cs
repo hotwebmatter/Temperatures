@@ -24,12 +24,12 @@ namespace Temperatures
             {
                 string label = string.Format("Enter temperature {0}: ", i + 1);
                 temperaturesArray[i] = ReadTemperature(label);
-                WriteLine("temperaturesArray[{0}] = {1}", i, temperaturesArray[i]);
             }
             AverageForEach();
             AverageFor();
             FindHighestTemperature();
             FindTempsBelowGiven();
+            ReadLine();
         }
 
         private static string GenerateHeader()
