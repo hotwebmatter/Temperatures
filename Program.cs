@@ -22,7 +22,9 @@ namespace Temperatures
             Write(GenerateHeader());
             for (int i = 0; i < 7; i++)
             {
-                ReadTemperatures(i);
+                string label = string.Format("Enter temperature {0}: ", i + 1);
+                temperaturesArray[i] = ReadTemperature(label);
+                WriteLine("temperaturesArray[{0}] = {1}", i, temperaturesArray[i]);
             }
             AverageForEach();
             AverageFor();
@@ -40,19 +42,19 @@ namespace Temperatures
             return result;
         }
 
-        private static void ReadTemperatures(int index)
+        private static double ReadTemperature(string label)
         {
             string userInput;
             double number;
-            Write("Enter temperature {0}: ", index + 1);
+            Write("{0}", label);
             userInput = ReadLine();
             while (double.TryParse(userInput, out number) == false)
             {
                 // Invalid Input
-                Write("Incorrect value\nEnter temperature {0}: ", index + 1);
+                Write("Incorrect value\n{0}", label);
                 userInput = ReadLine();
             }
-            temperaturesArray[index] = number;
+            return number;
         }
         private static void AverageForEach()
         {
