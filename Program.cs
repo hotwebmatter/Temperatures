@@ -91,6 +91,7 @@ namespace Temperatures
                 }
             }
             WriteLine("Highest Temperature is {0}", highestTemperature);
+            WriteLine("************************************\n");
         }
 
         private static void FindTempsBelowGiven()
@@ -106,6 +107,7 @@ namespace Temperatures
                 }
             }
             WriteLine("There are {0} days lower than {1}", counter, temperatureThreshold);
+            WriteLine("************************************\n");
         }
 
     }
