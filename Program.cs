@@ -65,7 +65,8 @@ namespace Temperatures
                 WriteLine("\t{0}", temperature);
                 total += temperature;
             }
-            WriteLine("Average temperature is {0:n1}", total / temperaturesArray.Length);
+            averageTemperature = total / temperaturesArray.Length;
+            WriteLine("Average temperature is {0:n1}", averageTemperature);
             WriteLine("************************************\n");
         }
         private static void AverageFor()
@@ -77,7 +78,8 @@ namespace Temperatures
                 WriteLine("{0}", temperaturesArray[i]);
                 total += temperaturesArray[i];
             }
-            WriteLine("Average temperature is {0:n1}", total / temperaturesArray.Length);
+            averageTemperature = total / temperaturesArray.Length;
+            WriteLine("Average temperature is {0:n1}", averageTemperature);
             WriteLine("************************************\n");
         }
         private static void FindHighestTemperature()
