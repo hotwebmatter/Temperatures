@@ -3,6 +3,8 @@ Assignment 11 submitted via Blackboard for C# class.
 
 Demonstrates basic knowledge of working with arrays.
 
+Also demonstrates usage of class-level variables.
+
 Output is kinda funky (sometimes tab-indented and sometimes not)
 but I did it that way to match the problem specification exactly.
 
